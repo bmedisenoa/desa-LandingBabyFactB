@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #6d6e70;
+	font-size: 16px;
+}
+
+h1, h2, h3, .colored{
+	color: #4aaf9c;
+	font-weight: bold;
+}
+
+h1{
+	font-size: 77px;
+}
+
+h2{
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+.logo{
+	width: 100%;
+	max-width: 220px;
+}
+
+p.lead{
+	font-size: 23px;
+}
+
+.bgcolor{
+	background-color: #ebf9f5;
+}
+
+.boxed {
+    background-color: #ffffff;
+    padding: 15px;
+    min-height: 320px;
+}
+
+hr.linea-corta {
+    border-color: #4aaf9c;
+    width: 35px;
+    margin-left: 0;
+}
+
+span.separa-v {
+    background: #4aaf9c;
+    width: 2px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imgSepara {
+    margin-top: -140px;
+}
+
+section{
+	background-position: center;
+	background-size: cover;
+	padding: 30px 0;
+}
+
+section#header{
+	background: #ffffff;
+	background: #fffffff6;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	padding: 20px 0;
+}
+
+section#header ul li a {
+    font-size: 14px;
+    color: #00af9a;
+    font-weight: bold;
+}
+
+section#header ul {
+	margin-top: 10px;
+}
+
+section#header ul li {
+    border-right: solid 1px #d4d5d6;
+    padding: 0 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section#header ul li:last-child{
+    border: 0;
+}
+
+
+section#inicio{
+	background-image: url(imgs/bg1.jpg);
+	padding-top: 150px;
+	padding-bottom: 60px;
+}
+
+section#destacado {
+    padding: 60px 0 50px;
+}
+
+section#posologia span.separa-v {
+    height: 530px;
+}
+
+section#accion-farmacologica{
+	background-image: url(imgs/bg2.jpg);
+	text-align: right;
+	padding: 60px 0;
+}
+
+
+
+section#final{
+	background-image: url(imgs/doctor.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: top right;
+	padding: 60px 0;
+}
+
+#footer img.logo {
+    max-width: 170px;
+}
+
+#footer a {
+    color: inherit;
+}
+
+#footer .col1 {
+    text-align: left;
+}
+
+#footer .col2 {
+    text-align: center;
+}
+
+#footer .col3 {
+    text-align: right;
+}
+
+
+.mobile-icon{
+	display: none;
+}
+
+.img-posologia{
+	width: 420px;
+}
+
+@media (max-width: 992px){
+	
+	.img-posologia{
+		width: 100%;
+	}
+
+	section#accion-farmacologica {
+		text-align: left;
+		background-image: none;
+		background-color: #fdfdfd;
+	}
+
+	h2{
+		font-size: 28px;
+		margin-bottom: 40px;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+	
+	span.separa-v {
+		background: #4aaf9c;
+		width: 100%;
+		height: 2px;
+		display: block;
+		margin: 30px 0;
+	}
+	
+	section#posologia span.separa-v {
+		height: 2px;
+	}
+	
+	.imgSepara {
+		margin-top: -40px;
+	}
+	
+	.boxed {
+		min-height: 0;
+		margin-bottom: 30px;
+	}
+
+	section#header ul.menu {
+		display: none;
+	}
+	
+	section#header ul {
+		float: none !important;
+		clear: both;
+	}
+
+	section#header ul li {
+		width: 100%;
+		display: inline-block;
+		border: none;
+		text-align: right;
+		padding: 10px 10px;
+		border-bottom: 1px solid #d4d5d6;
+	}
+	
+	
+	
+	.mobile-icon {
+		display: block;
+		border-top: 2px solid;
+		width: 15px;
+		height: 15px;
+		float: right;
+		margin-top: 25px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.mobile-icon:after {
+		content: " ";
+		width: 100%;
+		position: absolute;
+		top: 3px;
+		border-top: 2px solid;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+
+	.mobile-icon:before {
+		content: " ";
+		width: 100%;
+		position: absolute;
+		top: 8px;
+		border-top: 2px solid;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}
+
+	.mobile-icon.active {
+		border-top: 0px solid;
+	}
+
+	.mobile-icon.active:before {
+		-webkit-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		        transform: rotate(45deg);
+		top: 5px;
+	}
+
+	.mobile-icon.active:after {
+		-webkit-transform: rotate(-45deg);
+		    -ms-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+		top: 5px;
+	}
+	
+	section#final {
+		background-image: none;
+	}
+	
+	
+	#footer .col1, #footer .col2, #footer .col3 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	
+	
+}
